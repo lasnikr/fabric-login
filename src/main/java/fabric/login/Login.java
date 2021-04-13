@@ -72,4 +72,8 @@ public class Login {
 			}
 		}, "fabric-login").start();
 	}
+	
+	public Session getSession() {
+		return MinecraftClient.getInstance().getSession();
+	}
 }
