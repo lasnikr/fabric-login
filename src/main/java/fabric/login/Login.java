@@ -68,7 +68,7 @@ public class Login {
 				
 				logger.info("Logged in as: " + userAuthentication.getSelectedProfile().getName());
 			} catch (AuthenticationException e) {
-				e.printStackTrace();
+				logger.catching(e);
 			}
 			
 		}).start();
