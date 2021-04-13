@@ -27,7 +27,7 @@ public class Login {
 		new Thread(() -> {
 			((SessionMixin) MinecraftClient.getInstance().getSession()).setUsername(username);
 			logger.info("Logged in as: " + username);
-		}).start();
+		}, "fabric-login").start();
 	}
 
 	/**
@@ -35,7 +35,7 @@ public class Login {
 	 * as logging into your account in the minecraft launcher.
 	 */
 	public Login(String email, String password) {
-		this(email, password, Proxy.NO_PROXY, null, Agent.MINECRAFT, "mojang");
+		this(email, password, Proxy.NO_PROXY, "", Agent.MINECRAFT, "mojang");
 	}
 
 	/**
@@ -70,7 +70,6 @@ public class Login {
 			} catch (AuthenticationException e) {
 				logger.catching(e);
 			}
-			
-		}).start();
+		}, "fabric-login").start();
 	}
 }
