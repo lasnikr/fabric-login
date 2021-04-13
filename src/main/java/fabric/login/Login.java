@@ -45,7 +45,7 @@ public class Login {
 	 * changable parameters.
 	 * <p />
 	 * You can use the default values of
-	 * {@link #Login(String username, String password)} if you don't want to change
+	 * {@link #Login(String email, String password)} if you don't want to change
 	 * all parameters.
 	 */
 	public Login(String email, String password, Proxy proxy, String clientToken, Agent agent, String accountType) {
