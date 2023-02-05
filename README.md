@@ -1,8 +1,9 @@
 [![Release](https://jitpack.io/v/lasnikprogram/fabric-login.svg)](https://jitpack.io/#lasnikprogram/fabric-login)
+# Minecraft switched to Microsoft accounts as a mean of logging in. Therefore the code is outdated
 # Fabric Login
 Allows your mod to log into minecraft accounts. Really easy and really fast. 
 </br>
-Normal users don't get any usage from this. It is just a tool for developers.
+It is just a tool for developers. Not for users.
 </br>
 </br>
 ## How to add fabric-login to your development enviroment:
